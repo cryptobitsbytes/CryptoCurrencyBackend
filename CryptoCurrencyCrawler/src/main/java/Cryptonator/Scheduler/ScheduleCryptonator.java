@@ -1,8 +1,8 @@
 package Cryptonator.Scheduler;
 
+import Cryptonator.DatabaseManager.CryptonatorDBStorage;
 import Cryptonator.Models.TickerResponse;
 import Cryptonator.RequestClient.CryptonatorApi;
-import Cryptonator.TickerOutput.TickerCSVFile;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -14,7 +14,6 @@ import java.util.concurrent.TimeUnit;
 public class ScheduleCryptonator {
     private final static ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
 
-
     //TODO make a generalized scheduler
     public static void callCryptonatorAndStoreData()
     {
@@ -24,8 +23,8 @@ public class ScheduleCryptonator {
                 CryptonatorApi Api = new CryptonatorApi();
                 try{
                     TickerResponse tickerResponse = Api.callApi();
-                    TickerCSVFile csvFile = new TickerCSVFile();
-                    csvFile.writeTickerResponseToCSV(tickerResponse);
+                    CryptonatorDBStorage cryptonatorDBStorage = new CryptonatorDBStorage();
+                    cryptonatorDBStorage.storeTickerResponse(tickerResponse);
                     System.out.println("Succesfull storage");
                 }
                 catch (Exception e)

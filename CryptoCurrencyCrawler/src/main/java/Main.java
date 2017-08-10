@@ -2,13 +2,11 @@
  * Created by Lennard on 1-8-2017.
  */
 
-import DatabaseLayer.MongoDBInstance;
+import Cryptonator.Scheduler.ScheduleCryptonator;
 
 public class Main {
     public static void main(String[] args)
     {
-        //ScheduleCryptonator.callCryptonatorAndStoreData();
-        MongoDBInstance.getInstance().testDatabase();
-        MongoDBInstance.getInstance().retrieveDatabase();
+        ScheduleCryptonator.callCryptonatorAndStoreData();
     }
 }
