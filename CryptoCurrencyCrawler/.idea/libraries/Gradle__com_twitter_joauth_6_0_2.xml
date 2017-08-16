@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.twitter:joauth:6.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.twitter/joauth/6.0.2/d591272e42c725d3c61354e609aab1063f6077bb/joauth-6.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.twitter/joauth/6.0.2/41974e874ada63791f3dd694c0d8322688137147/joauth-6.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -2,11 +2,16 @@
  * Created by Lennard on 1-8-2017.
  */
 
-import Cryptonator.Scheduler.ScheduleCryptonator;
+import Twitter.TwitterConnector;
 
 public class Main {
     public static void main(String[] args)
     {
-        ScheduleCryptonator.callCryptonatorAndStoreData();
+        //ScheduleCryptonator.callCryptonatorAndStoreData();
+        try {
+            TwitterConnector.connect();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

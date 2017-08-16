@@ -1,3 +1,5 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
 group 'com.lennardeijsackers.cryptocurrencycrawler'
 version '1.0-SNAPSHOT'
 
@@ -7,6 +9,16 @@ mainClassName = 'Main'
 
 sourceCompatibility = 1.8
 
+processResources {
+            filter(ReplaceTokens, tokens: [
+                    "CONSUMER_KEY": CONSUMER_KEY,
+                    "CONSUMER_SECRET": CONSUMER_SECRET,
+                    "TOKEN": TOKEN,
+                    "TOKEN_SECRET":TOKEN_SECRET
+            ])
+}
+
+
 repositories {
     mavenCentral()
 }
@@ -14,5 +26,7 @@ repositories {
 dependencies {
     compile group: 'com.google.code.gson', name: 'gson', version: '1.7.2'
     compile 'org.mongodb:mongodb-driver:3.4.2'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.4'
+    compile group: 'com.twitter', name: 'hbc-core', version: '2.2.0'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
