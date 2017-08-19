@@ -1,5 +1,6 @@
 package DatabaseLayer;
 
+import Properties.MongoDBPropertiesManager;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
@@ -20,9 +21,8 @@ import static com.mongodb.client.model.Filters.eq;
  */
 
 public final class MongoDBInstance {
-    private static String HOSTNAME = "localhost";
-    private static int PORT = 27017;
-    private static MongoClient mongoClient = new MongoClient(HOSTNAME, PORT);
+    private static MongoDBPropertiesManager mongoDBPropertiesManager = new MongoDBPropertiesManager();
+    private static MongoClient mongoClient = new MongoClient(mongoDBPropertiesManager.getHostName(), mongoDBPropertiesManager.getPort());
     private static MongoDBInstance mongoDBInstance = null;
 
     public static MongoDBInstance getInstance() {
