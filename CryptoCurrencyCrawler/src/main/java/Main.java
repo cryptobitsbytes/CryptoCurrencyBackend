@@ -2,7 +2,7 @@
  * Created by Lennard on 1-8-2017.
  */
 
-import Twitter.TwitterConnector;
+import Twitter.RequestClient.TwitterConnector;
 import com.google.common.collect.Lists;
 
 public class Main {

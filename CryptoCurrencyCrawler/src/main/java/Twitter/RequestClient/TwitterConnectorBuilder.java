@@ -1,4 +1,4 @@
-package Twitter;
+package Twitter.RequestClient;
 
 import Properties.TwitterPropertiesManager;
 import com.twitter.hbc.ClientBuilder;

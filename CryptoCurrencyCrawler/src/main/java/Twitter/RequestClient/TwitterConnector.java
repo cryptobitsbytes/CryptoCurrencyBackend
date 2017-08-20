@@ -1,4 +1,4 @@
-package Twitter;
+package Twitter.RequestClient;
 
 import com.twitter.hbc.core.Client;
 
@@ -38,7 +38,7 @@ public class TwitterConnector {
         {
             twitterConnectorBuilder.setTrackTerms(trackTerms);
         }
-        
+
         return twitterConnectorBuilder.build();
     }
 
