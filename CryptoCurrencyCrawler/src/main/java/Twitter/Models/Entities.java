@@ -12,7 +12,7 @@ public class Entities {
     private List<UserMention> userMentions = null;
     @SerializedName("urls")
     @Expose
-    private List<Object> urls = null;
+    private List<Url> urls = null;
     @SerializedName("hashtags")
     @Expose
     private List<Hashtag> hashtags = null;
@@ -25,11 +25,11 @@ public class Entities {
         this.userMentions = userMentions;
     }
 
-    public List<Object> getUrls() {
+    public List<Url> getUrls() {
         return urls;
     }
 
-    public void setUrls(List<Object> urls) {
+    public void setUrls(List<Url> urls) {
         this.urls = urls;
     }
 

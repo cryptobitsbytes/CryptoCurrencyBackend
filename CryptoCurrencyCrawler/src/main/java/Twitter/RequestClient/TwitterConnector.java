@@ -1,5 +1,7 @@
 package Twitter.RequestClient;
 
+import HttpClient.JSONParser;
+import Twitter.Models.TwitterObject;
 import com.twitter.hbc.core.Client;
 
 import java.util.List;
@@ -48,7 +50,9 @@ public class TwitterConnector {
 
         while (!client.isDone()) {
             String msg = blockingQueue.take();
-            System.out.println(msg);
+            JSONParser parser = new JSONParser();
+            TwitterObject twitterObject = parser.parseJSONToObject(msg, TwitterObject.class);
+            System.out.println(twitterObject.getText());
         }
         client.stop();
     }
