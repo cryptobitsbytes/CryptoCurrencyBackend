@@ -19,6 +19,22 @@ public class CryptonatorDBStorage {
     private static final MongoDatabase MONGO_DATABASE = MONGO_DB_INSTANCE.getDatabase("Ticker");
     private static final MongoCollection<Document> MONGO_COLLECTION = MONGO_DB_INSTANCE.getCollection("Ticker", MONGO_DATABASE);
 
+    public void storeTickerResponse(TickerResponse tickerResponse)
+    {
+        Document document = tickerResponseToDocument(tickerResponse);
+        MONGO_DB_INSTANCE.insertOne(document, MONGO_COLLECTION);
+    }
+
+    public List<TickerResponse> findAllTickerResponse()
+    {
+        List<Document> documentList = MONGO_DB_INSTANCE.findAll(MONGO_COLLECTION);
+        List<TickerResponse> tickerResponseList = new LinkedList<>();
+        documentList.forEach((ticker) -> {
+            tickerResponseList.add(documentToTickerResponse(ticker));
+        });
+        return tickerResponseList;
+    }
+
     // TODO create generic document to POJO generator
     private Document tickerResponseToDocument(TickerResponse tickerResponse)
     {
@@ -56,21 +72,5 @@ public class CryptonatorDBStorage {
         ticker.setVolume((String)document.get("volume"));
         ticker.setChange((String)document.get("change"));
         return ticker;
-    }
-
-    public void storeTickerResponse(TickerResponse tickerResponse)
-    {
-        Document document = tickerResponseToDocument(tickerResponse);
-        MONGO_DB_INSTANCE.insertOne(document, MONGO_COLLECTION);
-    }
-
-    public List<TickerResponse> findAllTickerResponse()
-    {
-        List<Document> documentList = MONGO_DB_INSTANCE.findAll(MONGO_COLLECTION);
-        List<TickerResponse> tickerResponseList = new LinkedList<>();
-        documentList.forEach((ticker) -> {
-            tickerResponseList.add(documentToTickerResponse(ticker));
-        });
-        return tickerResponseList;
     }
 }

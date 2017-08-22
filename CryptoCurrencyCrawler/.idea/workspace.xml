@@ -90,8 +90,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="173">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,14 +99,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwitterConnector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnector.java">
+      <file leaf-file-name="Hashtag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/Hashtag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="54" column="54" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+            <state relative-caret-position="68">
+              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitterConnector.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="53" column="93" lean-forward="false" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,42 +124,8 @@
       <file leaf-file-name="TwitterObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/TwitterObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="216" column="13" lean-forward="false" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4887#4888#0" expanded="true" />
-                <element signature="e#4919#4920#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entities.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/Entities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CryptonatorApi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Cryptonator/RequestClient/CryptonatorApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="68">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -553,7 +529,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Cryptonator/DatabaseManager/CryptonatorDBStorage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Cryptonator/Scheduler/ScheduleCryptonator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Twitter/twitter.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/twitter.properties" />
@@ -566,7 +541,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Properties/MongoDBPropertiesManager.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/Twitter/TwitterConnectorBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Twitter/TwitterConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnectorBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterObservable.java" />
@@ -576,9 +550,15 @@
         <option value="$PROJECT_DIR$/src/main/java/Twitter/Models/UserMention.java" />
         <option value="$PROJECT_DIR$/src/main/java/Twitter/Models/TwitterObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/Twitter/Models/RetweetedStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/Twitter/Models/Url.java" />
         <option value="$PROJECT_DIR$/src/main/java/Twitter/Models/Entities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Cryptonator/DatabaseManager/CryptonatorDBStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Reflection/WrapperTypeChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Twitter/DatabaseManager/TwitterDBManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Reflection/TypeChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DatabaseLayer/DocumentConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnector.java" />
       </list>
     </option>
   </component>
@@ -603,9 +583,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -634,6 +613,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -766,7 +749,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HttpClient" />
+              <option name="myItemId" value="Reflection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CryptoCurrencyCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CryptoCurrencyCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseLayer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -793,36 +802,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Cryptonator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CryptoCurrencyCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CryptoCurrencyCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cryptonator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RequestClient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -858,6 +837,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1192,12 +1172,21 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1205,26 +1194,26 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39747635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1232,11 +1221,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="msgQueue" />
+        <watch expression="document.entrySet().toArray()[10]" />
       </configuration>
     </watches-manager>
   </component>
@@ -1245,62 +1235,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnectorBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="59" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="32" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1316,7 +1250,7 @@
         <state relative-caret-position="442">
           <caret line="26" column="216" lean-forward="false" selection-start-line="26" selection-start-column="216" selection-end-line="26" selection-end-column="216" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1445,10 +1379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="e#381#382#0" expanded="false" />
-            <element signature="e#458#459#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1456,10 +1386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#381#382#0" expanded="false" />
-            <element signature="e#458#459#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1510,7 +1436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1518,7 +1443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1526,7 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2432">
           <caret line="90" column="43" lean-forward="true" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,55 +1458,7 @@
         <state relative-caret-position="237">
           <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/Hashtag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/UserMention.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="1" lean-forward="false" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-          <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#599#600#0" expanded="false" />
-            <element signature="e#652#653#0" expanded="false" />
-            <element signature="e#690#691#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#760#761#0" expanded="false" />
-            <element signature="e#812#813#0" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#888#889#0" expanded="false" />
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#958#959#0" expanded="false" />
-            <element signature="e#992#993#0" expanded="false" />
-            <element signature="e#1023#1024#0" expanded="false" />
-            <element signature="e#1050#1051#0" expanded="false" />
-            <element signature="e#1090#1091#0" expanded="false" />
-            <element signature="e#1122#1123#0" expanded="false" />
-            <element signature="e#1152#1153#0" expanded="false" />
-            <element signature="e#1177#1178#0" expanded="false" />
-            <element signature="e#1214#1215#0" expanded="false" />
-            <element signature="e#1242#1243#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1596,180 +1471,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/RetweetedStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1173">
-          <caret line="144" column="36" lean-forward="true" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1745#1746#0" expanded="false" />
-            <element signature="e#1772#1773#0" expanded="false" />
-            <element signature="e#1812#1813#0" expanded="false" />
-            <element signature="e#1844#1845#0" expanded="false" />
-            <element signature="e#1881#1882#0" expanded="false" />
-            <element signature="e#1913#1914#0" expanded="false" />
-            <element signature="e#1964#1965#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-            <element signature="e#2048#2049#0" expanded="false" />
-            <element signature="e#2086#2087#0" expanded="false" />
-            <element signature="e#2148#2149#0" expanded="false" />
-            <element signature="e#2202#2203#0" expanded="false" />
-            <element signature="e#2246#2247#0" expanded="false" />
-            <element signature="e#2286#2287#0" expanded="false" />
-            <element signature="e#2352#2353#0" expanded="false" />
-            <element signature="e#2410#2411#0" expanded="false" />
-            <element signature="e#2447#2448#0" expanded="false" />
-            <element signature="e#2479#2480#0" expanded="false" />
-            <element signature="e#2530#2531#0" expanded="false" />
-            <element signature="e#2572#2573#0" expanded="false" />
-            <element signature="e#2605#2606#0" expanded="false" />
-            <element signature="e#2634#2635#0" expanded="false" />
-            <element signature="e#2678#2679#0" expanded="false" />
-            <element signature="e#2714#2715#0" expanded="false" />
-            <element signature="e#2760#2761#0" expanded="false" />
-            <element signature="e#2802#2803#0" expanded="false" />
-            <element signature="e#2872#2873#0" expanded="false" />
-            <element signature="e#2934#2935#0" expanded="false" />
-            <element signature="e#2981#2982#0" expanded="false" />
-            <element signature="e#3024#3025#0" expanded="false" />
-            <element signature="e#3192#3193#0" expanded="false" />
-            <element signature="e#3220#3221#0" expanded="false" />
-            <element signature="e#3262#3263#0" expanded="false" />
-            <element signature="e#3296#3297#0" expanded="false" />
-            <element signature="e#3333#3334#0" expanded="false" />
-            <element signature="e#3364#3365#0" expanded="false" />
-            <element signature="e#3414#3415#0" expanded="false" />
-            <element signature="e#3454#3455#0" expanded="false" />
-            <element signature="e#3493#3494#0" expanded="false" />
-            <element signature="e#3528#3529#0" expanded="false" />
-            <element signature="e#3584#3585#0" expanded="false" />
-            <element signature="e#3632#3633#0" expanded="false" />
-            <element signature="e#3669#3670#0" expanded="false" />
-            <element signature="e#3701#3702#0" expanded="false" />
-            <element signature="e#3752#3753#0" expanded="false" />
-            <element signature="e#3794#3795#0" expanded="false" />
-            <element signature="e#3839#3840#0" expanded="false" />
-            <element signature="e#3880#3881#0" expanded="false" />
-            <element signature="e#3948#3949#0" expanded="false" />
-            <element signature="e#4008#4009#0" expanded="false" />
-            <element signature="e#4040#4041#0" expanded="false" />
-            <element signature="e#4068#4069#0" expanded="false" />
-            <element signature="e#4110#4111#0" expanded="false" />
-            <element signature="e#4144#4145#0" expanded="false" />
-            <element signature="e#4184#4185#0" expanded="false" />
-            <element signature="e#4219#4220#0" expanded="false" />
-            <element signature="e#4276#4277#0" expanded="false" />
-            <element signature="e#4324#4325#0" expanded="false" />
-            <element signature="e#4360#4361#0" expanded="false" />
-            <element signature="e#4392#4393#0" expanded="false" />
-            <element signature="e#4442#4443#0" expanded="false" />
-            <element signature="e#4484#4485#0" expanded="false" />
-            <element signature="e#4513#4514#0" expanded="false" />
-            <element signature="e#4540#4541#0" expanded="false" />
-            <element signature="e#4578#4579#0" expanded="false" />
-            <element signature="e#4610#4611#0" expanded="false" />
-            <element signature="e#4640#4641#0" expanded="false" />
-            <element signature="e#4665#4666#0" expanded="false" />
-            <element signature="e#4702#4703#0" expanded="false" />
-            <element signature="e#4730#4731#0" expanded="false" />
-            <element signature="e#4768#4769#0" expanded="false" />
-            <element signature="e#4802#4803#0" expanded="false" />
-            <element signature="e#4856#4857#0" expanded="false" />
-            <element signature="e#4902#4903#0" expanded="false" />
-            <element signature="e#4932#4933#0" expanded="false" />
-            <element signature="e#4958#4959#0" expanded="false" />
-            <element signature="e#4996#4997#0" expanded="false" />
-            <element signature="e#5026#5027#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cryptonator/DatabaseManager/CryptonatorDBStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Cryptonator/RequestClient/CryptonatorApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/jre/lib/rt.jar!/java/lang/reflect/Field.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="351" column="36" lean-forward="false" selection-start-line="351" selection-start-column="36" selection-end-line="351" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnector.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/1.7.2/a6fe3006df46174a9c1c56b3c51357b9bfde5874/gson-1.7.2-sources.jar!/com/google/gson/annotations/SerializedName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="54" column="54" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+        <state relative-caret-position="850">
+          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/DatabaseManager/TwitterDBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/TwitterObject.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/UserMention.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="216" column="13" lean-forward="false" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4887#4888#0" expanded="true" />
-            <element signature="e#4919#4920#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/Url.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="44" />
+        <state relative-caret-position="297">
+          <caret line="65" column="1" lean-forward="false" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/Entities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/Url.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-548">
+          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/RetweetedStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="144" column="36" lean-forward="true" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
+          <folding>
+            <element signature="e#3414#3415#0" expanded="false" />
+            <element signature="e#3454#3455#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Cryptonator/DatabaseManager/CryptonatorDBStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/jre/lib/rt.jar!/java/lang/Class.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="172" column="13" lean-forward="false" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/TwitterObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/Models/Hashtag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Reflection/TypeChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#562#572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseLayer/DocumentConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter/RequestClient/TwitterConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="53" column="93" lean-forward="false" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
           <folding />
         </state>
       </provider>
