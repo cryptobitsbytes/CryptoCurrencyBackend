@@ -43,7 +43,7 @@ public class User {
     private Boolean verified;
     @SerializedName("time_zone")
     @Expose
-    private Object timeZone;
+    private String timeZone;
     @SerializedName("profile_text_color")
     @Expose
     private String profileTextColor;
@@ -100,7 +100,7 @@ public class User {
     private String profileSidebarBorderColor;
     @SerializedName("url")
     @Expose
-    private Object url;
+    private String url;
     @SerializedName("id")
     @Expose
     private Integer id;
@@ -112,7 +112,7 @@ public class User {
     private Object following;
     @SerializedName("utc_offset")
     @Expose
-    private Object utcOffset;
+    private Integer utcOffset;
 
     public Object getNotifications() {
         return notifications;
@@ -210,11 +210,11 @@ public class User {
         this.verified = verified;
     }
 
-    public Object getTimeZone() {
+    public String getTimeZone() {
         return timeZone;
     }
 
-    public void setTimeZone(Object timeZone) {
+    public void setTimeZone(String timeZone) {
         this.timeZone = timeZone;
     }
 
@@ -362,11 +362,11 @@ public class User {
         this.profileSidebarBorderColor = profileSidebarBorderColor;
     }
 
-    public Object getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    public void setUrl(Object url) {
+    public void setUrl(String url) {
         this.url = url;
     }
 
@@ -394,11 +394,11 @@ public class User {
         this.following = following;
     }
 
-    public Object getUtcOffset() {
+    public Integer getUtcOffset() {
         return utcOffset;
     }
 
-    public void setUtcOffset(Object utcOffset) {
+    public void setUtcOffset(Integer utcOffset) {
         this.utcOffset = utcOffset;
     }
 

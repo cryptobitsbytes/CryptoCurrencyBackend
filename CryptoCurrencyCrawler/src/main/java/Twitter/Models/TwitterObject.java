@@ -13,10 +13,10 @@ public class TwitterObject {
     private Boolean truncated;
     @SerializedName("in_reply_to_user_id")
     @Expose
-    private Object inReplyToUserId;
+    private Long inReplyToUserId;
     @SerializedName("in_reply_to_status_id")
     @Expose
-    private Object inReplyToStatusId;
+    private Long inReplyToStatusId;
     @SerializedName("favorited")
     @Expose
     private Boolean favorited;
@@ -25,10 +25,10 @@ public class TwitterObject {
     private String source;
     @SerializedName("in_reply_to_screen_name")
     @Expose
-    private Object inReplyToScreenName;
+    private String inReplyToScreenName;
     @SerializedName("in_reply_to_status_id_str")
     @Expose
-    private Object inReplyToStatusIdStr;
+    private String inReplyToStatusIdStr;
     @SerializedName("id_str")
     @Expose
     private String idStr;
@@ -43,10 +43,10 @@ public class TwitterObject {
     private Boolean retweeted;
     @SerializedName("in_reply_to_user_id_str")
     @Expose
-    private Object inReplyToUserIdStr;
+    private String inReplyToUserIdStr;
     @SerializedName("place")
     @Expose
-    private Object place;
+    private Place place;
     @SerializedName("retweet_count")
     @Expose
     private Integer retweetCount;
@@ -64,7 +64,7 @@ public class TwitterObject {
     private Integer id;
     @SerializedName("coordinates")
     @Expose
-    private Object coordinates;
+    private Coordinates coordinates;
     @SerializedName("geo")
     @Expose
     private Object geo;
@@ -85,19 +85,19 @@ public class TwitterObject {
         this.truncated = truncated;
     }
 
-    public Object getInReplyToUserId() {
+    public Long getInReplyToUserId() {
         return inReplyToUserId;
     }
 
-    public void setInReplyToUserId(Object inReplyToUserId) {
+    public void setInReplyToUserId(Long inReplyToUserId) {
         this.inReplyToUserId = inReplyToUserId;
     }
 
-    public Object getInReplyToStatusId() {
+    public Long getInReplyToStatusId() {
         return inReplyToStatusId;
     }
 
-    public void setInReplyToStatusId(Object inReplyToStatusId) {
+    public void setInReplyToStatusId(Long inReplyToStatusId) {
         this.inReplyToStatusId = inReplyToStatusId;
     }
 
@@ -117,19 +117,19 @@ public class TwitterObject {
         this.source = source;
     }
 
-    public Object getInReplyToScreenName() {
+    public String getInReplyToScreenName() {
         return inReplyToScreenName;
     }
 
-    public void setInReplyToScreenName(Object inReplyToScreenName) {
+    public void setInReplyToScreenName(String inReplyToScreenName) {
         this.inReplyToScreenName = inReplyToScreenName;
     }
 
-    public Object getInReplyToStatusIdStr() {
+    public String getInReplyToStatusIdStr() {
         return inReplyToStatusIdStr;
     }
 
-    public void setInReplyToStatusIdStr(Object inReplyToStatusIdStr) {
+    public void setInReplyToStatusIdStr(String inReplyToStatusIdStr) {
         this.inReplyToStatusIdStr = inReplyToStatusIdStr;
     }
 
@@ -165,19 +165,19 @@ public class TwitterObject {
         this.retweeted = retweeted;
     }
 
-    public Object getInReplyToUserIdStr() {
+    public String getInReplyToUserIdStr() {
         return inReplyToUserIdStr;
     }
 
-    public void setInReplyToUserIdStr(Object inReplyToUserIdStr) {
+    public void setInReplyToUserIdStr(String inReplyToUserIdStr) {
         this.inReplyToUserIdStr = inReplyToUserIdStr;
     }
 
-    public Object getPlace() {
+    public Place getPlace() {
         return place;
     }
 
-    public void setPlace(Object place) {
+    public void setPlace(Place place) {
         this.place = place;
     }
 
@@ -221,11 +221,11 @@ public class TwitterObject {
         this.id = id;
     }
 
-    public Object getCoordinates() {
+    public Coordinates getCoordinates() {
         return coordinates;
     }
 
-    public void setCoordinates(Object coordinates) {
+    public void setCoordinates(Coordinates coordinates) {
         this.coordinates = coordinates;
     }
 

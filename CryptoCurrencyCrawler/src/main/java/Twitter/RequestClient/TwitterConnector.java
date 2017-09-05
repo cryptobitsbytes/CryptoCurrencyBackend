@@ -1,7 +1,9 @@
 package Twitter.RequestClient;
 
+import DatabaseLayer.DocumentConverter;
 import HttpClient.JSONParser;
 import Twitter.Models.TwitterObject;
+import com.google.gson.JsonParseException;
 import com.twitter.hbc.core.Client;
 
 import java.util.List;
@@ -51,8 +53,18 @@ public class TwitterConnector {
         while (!client.isDone()) {
             String msg = blockingQueue.take();
             JSONParser parser = new JSONParser();
-            TwitterObject twitterObject = parser.parseJSONToObject(msg, TwitterObject.class);
-            System.out.println(twitterObject.getText());
+            try
+            {
+                TwitterObject twitterObject = parser.parseJSONToObject(msg, TwitterObject.class);
+
+                org.bson.Document document = DocumentConverter.convertObjectToDocument(twitterObject);
+                TwitterObject twitterObject1 = (TwitterObject)DocumentConverter.convertDocumentToObject(document, twitterObject.getClass());
+                System.out.println(twitterObject.getText());
+            }
+            catch (JsonParseException e)
+            {
+                System.out.println(e);
+            }
         }
         client.stop();
     }
