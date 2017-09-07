@@ -13,11 +13,15 @@ import java.util.List;
 /**
  * Created by Lennard on 20-8-2017.
  */
+//TODO make SingleTon
 public class TwitterDBManager {
     private static final MongoDBInstance MONGO_DB_INSTANCE = MongoDBInstance.getInstance();
     // TODO refactor to lessen dependency on implementation
-    private static final MongoDatabase MONGO_DATABASE = MONGO_DB_INSTANCE.getDatabase("Twitter");
+    private static final MongoDatabase MONGO_DATABASE = MONGO_DB_INSTANCE.getDatabase("Ticker");
     private static final MongoCollection<Document> MONGO_COLLECTION = MONGO_DB_INSTANCE.getCollection("Twitter", MONGO_DATABASE);
+
+    public TwitterDBManager() {
+    }
 
     public void storeTwitterObject(TwitterObject twitterObject)
     {

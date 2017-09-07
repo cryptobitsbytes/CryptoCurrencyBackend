@@ -3,18 +3,15 @@
  */
 
 import Twitter.Observable.TwitterObservable;
-import Twitter.RequestClient.TwitterConnector;
+import Twitter.Observable.TwitterObserver;
 import com.google.common.collect.Lists;
 
 public class Main {
     public static void main(String[] args)
     {
-        //ScheduleCryptonator.callCryptonatorAndStoreData();
-        try {
-            TwitterConnector twitterConnector = TwitterConnector.createInstance(null, Lists.newArrayList("bitcoin", "cryptocurrency"), new TwitterObservable());
-            twitterConnector.connect();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        ScheduleCryptonator.callCryptonatorAndStoreData();
+        TwitterObservable twitterObservable = new TwitterObservable(Lists.newArrayList("bitcoin", "cryptocurrency"));
+        TwitterObserver twitterObserver = new TwitterObserver(twitterObservable);
+        twitterObservable.startObserving();
     }
 }
