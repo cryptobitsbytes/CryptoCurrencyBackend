@@ -1,8 +1,8 @@
 package Twitter.RequestClient;
 
-import DatabaseLayer.DocumentConverter;
 import HttpClient.JSONParser;
 import Twitter.Models.TwitterObject;
+import Twitter.Observable.TwitterObservable;
 import com.google.gson.JsonParseException;
 import com.twitter.hbc.core.Client;
 
@@ -16,14 +16,16 @@ public class TwitterConnector {
 
     private Client client = null;
     private BlockingQueue<String> blockingQueue = null;
+    private  TwitterObservable twitterObservable;
 
-    public TwitterConnector(Client client, BlockingQueue blockingQueue)
+    public TwitterConnector(Client client, BlockingQueue blockingQueue, TwitterObservable twitterObservable)
     {
         this.client = client;
         this.blockingQueue = blockingQueue;
+        this.twitterObservable = twitterObservable;
     }
 
-    public static TwitterConnector createInstance(List<Long> followings, List<String> trackTerms)
+    public static TwitterConnector createInstance(List<Long> followings, List<String> trackTerms, TwitterObservable twitterObservable)
     {
         TwitterConnectorBuilder twitterConnectorBuilder = new TwitterConnectorBuilder()
                 .setAuthentication()
@@ -43,7 +45,7 @@ public class TwitterConnector {
             twitterConnectorBuilder.setTrackTerms(trackTerms);
         }
 
-        return twitterConnectorBuilder.build();
+        return twitterConnectorBuilder.build(twitterObservable);
     }
 
     public void connect() throws Exception
@@ -56,10 +58,7 @@ public class TwitterConnector {
             try
             {
                 TwitterObject twitterObject = parser.parseJSONToObject(msg, TwitterObject.class);
-
-                org.bson.Document document = DocumentConverter.convertObjectToDocument(twitterObject);
-                TwitterObject twitterObject1 = (TwitterObject)DocumentConverter.convertDocumentToObject(document, twitterObject.getClass());
-                System.out.println(twitterObject.getText());
+                twitterObservable.newTweet(twitterObject);
             }
             catch (JsonParseException e)
             {

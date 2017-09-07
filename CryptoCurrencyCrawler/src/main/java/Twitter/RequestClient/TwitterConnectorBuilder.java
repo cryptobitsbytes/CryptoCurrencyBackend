@@ -1,6 +1,7 @@
 package Twitter.RequestClient;
 
 import Properties.TwitterPropertiesManager;
+import Twitter.Observable.TwitterObservable;
 import com.twitter.hbc.ClientBuilder;
 import com.twitter.hbc.core.Client;
 import com.twitter.hbc.core.Constants;
@@ -28,9 +29,9 @@ public class TwitterConnectorBuilder {
     private Client client = null;
     private BlockingQueue<String> blockingQueue = null;
 
-    public TwitterConnector build()
+    public TwitterConnector build(TwitterObservable twitterObservable)
     {
-        return new TwitterConnector(client, blockingQueue);
+        return new TwitterConnector(client, blockingQueue, twitterObservable);
     }
 
     public TwitterConnectorBuilder setAuthentication()
