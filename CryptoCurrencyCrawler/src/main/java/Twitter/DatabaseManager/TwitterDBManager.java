@@ -1,12 +1,13 @@
 package Twitter.DatabaseManager;
 
+import DatabaseLayer.DocumentConverter;
 import DatabaseLayer.MongoDBInstance;
-import Twitter.Models.Hashtag;
-import Twitter.Models.Url;
+import Twitter.Models.TwitterObject;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -18,41 +19,28 @@ public class TwitterDBManager {
     private static final MongoDatabase MONGO_DATABASE = MONGO_DB_INSTANCE.getDatabase("Twitter");
     private static final MongoCollection<Document> MONGO_COLLECTION = MONGO_DB_INSTANCE.getCollection("Twitter", MONGO_DATABASE);
 
-
-    //TODO replace with generic POJO to document class
-    private Document urlToDocument(Url url)
+    public void storeTwitterObject(TwitterObject twitterObject)
     {
-        Document document = new Document();
-        document.append("url", url.getDisplayUrl());
-        document.append("expanded_url", url.getExpandedUrl());
-        document.append("display_url", url.getDisplayUrl());
-        document.append("indices", url.getIndices());
-        return document;
+        Document document = twitterObjectToDocument(twitterObject);
+        MONGO_DB_INSTANCE.insertOne(document, MONGO_COLLECTION);
+    }
+    public List<TwitterObject> findAllTickerResponse()
+    {
+        List<Document> documentList = MONGO_DB_INSTANCE.findAll(MONGO_COLLECTION);
+        List<TwitterObject> twitterObjectList = new LinkedList<>();
+        documentList.forEach((twitterObject) -> {
+            twitterObjectList.add(documentToTwitterObject(twitterObject));
+        });
+        return twitterObjectList;
     }
 
-    private Url documentToUrl(Document document)
+    private Document twitterObjectToDocument(TwitterObject twitterObject)
     {
-        Url url = new Url();
-        url.setUrl((String)document.get("url"));
-        url.setExpandedUrl((String)document.get("expanded_url"));
-        url.setDisplayUrl((String)document.get("display_url"));
-        url.setIndices((List<Integer>)document.get("indices"));
-        return url;
+        return DocumentConverter.convertObjectToDocument(twitterObject);
     }
 
-    private Document hashtagToDocument(Hashtag hashtag)
+    private TwitterObject documentToTwitterObject(Document document)
     {
-        Document document = new Document();
-        document.append("text", hashtag.getText());
-        document.append("indices", hashtag.getIndices());
-        return document;
-    }
-
-    private Hashtag documentToHashtag(Document document)
-    {
-        Hashtag hashtag = new Hashtag();
-        hashtag.setText((String)document.get("text"));
-        hashtag.setIndices((List<Integer>)document.get("indices"));
-        return hashtag;
+        return (TwitterObject)DocumentConverter.convertDocumentToObject(document, TwitterObject.class);
     }
 }

@@ -1,7 +1,7 @@
 package Cryptonator.DatabaseManager;
 
-import Cryptonator.Models.Ticker;
 import Cryptonator.Models.TickerResponse;
+import DatabaseLayer.DocumentConverter;
 import DatabaseLayer.MongoDBInstance;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -38,39 +38,11 @@ public class CryptonatorDBStorage {
     // TODO create generic document to POJO generator
     private Document tickerResponseToDocument(TickerResponse tickerResponse)
     {
-        Document ticker = tickerToDocument(tickerResponse.getTicker());
-        Document document = new Document();
-        document.append("timestamp",tickerResponse.getTimestamp());
-        document.append("ticker", ticker);
-        return document;
-    }
-    private Document tickerToDocument(Ticker ticker)
-    {
-        Document document = new Document();
-        document.append("base", ticker.getBase());
-        document.append("target", ticker.getTarget());
-        document.append("price", ticker.getPrice());
-        document.append("volume", ticker.getVolume());
-        document.append("change", ticker.getChange());
-        return  document;
+        return DocumentConverter.convertObjectToDocument(tickerResponse);
     }
 
     private TickerResponse documentToTickerResponse(Document document)
     {
-        TickerResponse tickerResponse = new TickerResponse();
-        tickerResponse.setTimestamp((int)document.get("timestamp"));
-        tickerResponse.setTicker(documentToTicker((Document)document.get("ticker")));
-        return tickerResponse;
-    }
-
-    private Ticker documentToTicker(Document document)
-    {
-        Ticker ticker = new Ticker();
-        ticker.setBase((String)document.get("base"));
-        ticker.setTarget((String)document.get("target"));
-        ticker.setPrice((String)document.get("price"));
-        ticker.setVolume((String)document.get("volume"));
-        ticker.setChange((String)document.get("change"));
-        return ticker;
+        return (TickerResponse) DocumentConverter.convertDocumentToObject(document, TickerResponse.class);
     }
 }

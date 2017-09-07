@@ -13,7 +13,7 @@ import java.util.LinkedList;
 /**
 
  */
-//TODO make beautiful, this class looks ugly. Need to do something about all the try catches in there...
+//TODO make beautiful, this class looks ugly.
 public class DocumentConverter {
 
     public static Document convertObjectToDocument(Object object)
@@ -30,7 +30,6 @@ public class DocumentConverter {
             {
                 String fieldJsonValue = field.getAnnotation(SerializedName.class).value();
                 Object value = runGetter(field, object, methods);
-                //TODO null might be a valid empty value for some json...
                 if(value != null)
                 {
                     if(TypeChecker.isNotWrapperType(value.getClass()))
@@ -88,7 +87,6 @@ public class DocumentConverter {
                                 System.out.printf("JsonValue: %s; Class: %s", field.getName(), field.getClass().getName());
                             }
                         } else {
-                            //TODO fix code for lists
                             Collection<Object> collection =  document.values();
                             Collection<Object> returnCollection = new LinkedList<>();
                             for(Object documentObject : collection)
