@@ -2,7 +2,7 @@ package Cryptonator.Scheduler;
 
 import Cryptonator.DatabaseManager.CryptonatorDBStorage;
 import Cryptonator.Models.TickerResponse;
-import Cryptonator.RequestClient.CryptonatorApi;
+import Cryptonator.RequestClient.CryptonatorConnector;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -20,9 +20,9 @@ public class ScheduleCryptonator {
         final Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                CryptonatorApi Api = new CryptonatorApi();
+                CryptonatorConnector Api = new CryptonatorConnector();
                 try{
-                    TickerResponse tickerResponse = Api.callApi();
+                    TickerResponse tickerResponse = Api.connect();
                     CryptonatorDBStorage cryptonatorDBStorage = new CryptonatorDBStorage();
                     cryptonatorDBStorage.storeTickerResponse(tickerResponse);
                     System.out.println("Succesfull storage");

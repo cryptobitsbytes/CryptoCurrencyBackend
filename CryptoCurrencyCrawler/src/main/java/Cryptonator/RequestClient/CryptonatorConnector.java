@@ -1,6 +1,7 @@
 package Cryptonator.RequestClient;
 
 import Cryptonator.Models.TickerResponse;
+import Cryptonator.Observable.CryptonatorObservable;
 import HttpClient.HTTPMethods;
 import HttpClient.HTTPRequest;
 import HttpClient.HTTPResponse;
@@ -13,14 +14,15 @@ import java.net.URL;
 /**
  * Created by Lennard on 18-7-2017.
  */
-public class CryptonatorApi {
+public class CryptonatorConnector {
     private final String apiURL = "https://api.cryptonator.com/api/ticker/btc-usd";
+    private CryptonatorObservable cryptonatorObservable = null;
 
-    public CryptonatorApi()
+    public CryptonatorConnector(CryptonatorObservable cryptonatorObservable)
     {
-
+        this.cryptonatorObservable = cryptonatorObservable;
     }
-    public TickerResponse callApi() throws Exception
+    public void connect() throws Exception
     {
         HTTPRequest request = new HTTPRequest(createURL());
         request.setMethod(HTTPMethods.GET);
@@ -36,7 +38,7 @@ public class CryptonatorApi {
         String json = response.getContentString();
         JSONParser parser = new JSONParser();
         TickerResponse tickerResponse = parser.parseJSONToObject(json, TickerResponse.class);
-        return  tickerResponse;
+        cryptonatorObservable.newTick(tickerResponse);
     }
 
     private URL  createURL() throws MalformedURLException
