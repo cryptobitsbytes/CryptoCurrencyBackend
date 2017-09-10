@@ -1,4 +1,4 @@
-package DatabaseLayer;
+package DatabaseLayer.Connector;
 
 import Properties.MongoDBPropertiesManager;
 import com.mongodb.MongoClient;

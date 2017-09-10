@@ -1,6 +1,5 @@
-package DatabaseLayer;
+package Reflection;
 
-import Reflection.TypeChecker;
 import com.google.gson.annotations.SerializedName;
 import org.bson.Document;
 

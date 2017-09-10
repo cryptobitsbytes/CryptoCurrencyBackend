@@ -1,13 +1,9 @@
 package Twitter.DatabaseManager;
 
-import DatabaseLayer.DocumentConverter;
-import DatabaseLayer.MongoDBInstance;
+import DatabaseLayer.Implementation.MongoDatabaseImplementation;
+import DatabaseLayer.Interface.IDatabase;
 import Twitter.Models.TwitterObject;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
-import org.bson.Document;
 
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -15,36 +11,18 @@ import java.util.List;
  */
 //TODO make SingleTon
 public class TwitterDBManager {
-    private static final MongoDBInstance MONGO_DB_INSTANCE = MongoDBInstance.getInstance();
-    // TODO refactor to lessen dependency on implementation
-    private static final MongoDatabase MONGO_DATABASE = MONGO_DB_INSTANCE.getDatabase("Ticker");
-    private static final MongoCollection<Document> MONGO_COLLECTION = MONGO_DB_INSTANCE.getCollection("Twitter", MONGO_DATABASE);
+    private IDatabase databaseImpl = null;
 
     public TwitterDBManager() {
+        this.databaseImpl = new MongoDatabaseImplementation("Twitter", "Twitter");
     }
 
     public void storeTwitterObject(TwitterObject twitterObject)
     {
-        Document document = twitterObjectToDocument(twitterObject);
-        MONGO_DB_INSTANCE.insertOne(document, MONGO_COLLECTION);
+        databaseImpl.store(twitterObject);
     }
     public List<TwitterObject> findAllTickerResponse()
     {
-        List<Document> documentList = MONGO_DB_INSTANCE.findAll(MONGO_COLLECTION);
-        List<TwitterObject> twitterObjectList = new LinkedList<>();
-        documentList.forEach((twitterObject) -> {
-            twitterObjectList.add(documentToTwitterObject(twitterObject));
-        });
-        return twitterObjectList;
-    }
-
-    private Document twitterObjectToDocument(TwitterObject twitterObject)
-    {
-        return DocumentConverter.convertObjectToDocument(twitterObject);
-    }
-
-    private TwitterObject documentToTwitterObject(Document document)
-    {
-        return (TwitterObject)DocumentConverter.convertDocumentToObject(document, TwitterObject.class);
+        return databaseImpl.findAll(TwitterObject.class);
     }
 }
