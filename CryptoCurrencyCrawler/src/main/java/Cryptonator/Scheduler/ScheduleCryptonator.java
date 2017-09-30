@@ -20,17 +20,17 @@ public class ScheduleCryptonator {
         final Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                CryptonatorConnector Api = new CryptonatorConnector();
-                try{
-                    TickerResponse tickerResponse = Api.connect();
-                    CryptonatorDBStorage cryptonatorDBStorage = new CryptonatorDBStorage();
-                    cryptonatorDBStorage.storeTickerResponse(tickerResponse);
-                    System.out.println("Succesfull storage");
-                }
-                catch (Exception e)
-                {
-                    System.out.println(e.getMessage());
-                }
+//                CryptonatorConnector Api = new CryptonatorConnector();
+//                try{
+//                    TickerResponse tickerResponse = Api.connect();
+//                    CryptonatorDBStorage cryptonatorDBStorage = new CryptonatorDBStorage();
+//                    cryptonatorDBStorage.storeTickerResponse(tickerResponse);
+//                    System.out.println("Succesfull storage");
+//                }
+//                catch (Exception e)
+//                {
+//                    System.out.println(e.getMessage());
+//                }
             }
         };
         scheduledExecutorService.scheduleWithFixedDelay(runnable, 0, 60, TimeUnit.SECONDS);
