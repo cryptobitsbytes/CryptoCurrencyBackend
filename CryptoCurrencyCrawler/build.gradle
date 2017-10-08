@@ -1,4 +1,7 @@
 import org.apache.tools.ant.filters.ReplaceTokens
+import com.bmuschko.gradle.docker.tasks.image.DockerBuildImage
+
+import java.lang.reflect.Executable
 
 group 'com.lennardeijsackers.cryptocurrencycrawler'
 version '1.0-SNAPSHOT'
@@ -6,9 +9,23 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'application'
 
+apply plugin: 'com.bmuschko.docker-remote-api'
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.bmuschko:gradle-docker-plugin:3.2.0'
+    }
+}
+
 mainClassName = 'Main'
 
 sourceCompatibility = 1.8
+
+docker {
+    url = 'tcp://192.168.59.103:2375'
+}
 
 processResources {
             filter(ReplaceTokens, tokens: [
@@ -32,11 +49,20 @@ jar {
 }
 task copyJar(type: Copy) {
     dependsOn   'jar'
-    from        "build/libs/cryptocurrency-backend-${project.version}.jar"
+    from        'build/libs'
     into        'build/docker'
     rename { String fileName ->
         fileName.replace("-${project.version}", "")
     }
+}
+
+task buildImage(type: DockerBuildImage) {
+    dependsOn copyJar
+    url = 'unix:///var/run/docker.sock'
+    inputDir = file(".")
+    tag = 'bitsandbyteshq/cryptocrawler:latest'
+
+
 }
 
 
