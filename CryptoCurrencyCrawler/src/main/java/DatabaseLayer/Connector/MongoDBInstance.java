@@ -26,6 +26,7 @@ public final class MongoDBInstance {
     private static MongoDBInstance mongoDBInstance = null;
 
     public static MongoDBInstance getInstance() {
+        System.out.println(mongoDBPropertiesManager.getHostName());
         if (mongoDBInstance == null) {
             mongoDBInstance = new MongoDBInstance();
         }
