@@ -26,6 +26,7 @@ public class MongoDatabaseImplementation implements IDatabase {
     public  void store(Object o)
     {
         Document document = convertToDocument(o);
+        MONGO_DB_INSTANCE.insertOne(document, MONGO_COLLECTION);
     }
 
     public <T> List<T> findAll(Class<T> tClass)

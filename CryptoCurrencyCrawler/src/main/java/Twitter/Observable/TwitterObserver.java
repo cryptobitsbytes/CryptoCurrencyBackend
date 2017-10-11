@@ -23,7 +23,6 @@ public class TwitterObserver implements Observer {
         if(o instanceof TwitterObject)
         {
             twitterDBManager.storeTwitterObject((TwitterObject)o);
-            System.out.println("Succesfull storage");
         }
     }
 }

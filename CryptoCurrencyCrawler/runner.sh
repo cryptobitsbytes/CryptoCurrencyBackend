@@ -1,16 +1,20 @@
 #!/bin/bash
+#Shell script to execute the application startup. It makes use of docker and the gradle wrapper included in the project
+
+#Making sure there is no docker swarm currently running
+#However it would be best practice to manually call docker-compose down when closing the current environment
 echo "Removing old docker swarm"
-DOWN="docker-compose down"
-$DOWN
+docker-compose down
+#Making sure the /build directory gets cleaned
 echo "cleaning build directory"
-CLEAN="./gradlew clean install"
-$CLEAN
+./gradlew clean
+#Rebuild the application, create a jar and transport the jar to build/docker
 echo "executing build"
-BUILD="./gradlew build"
-$BUILD
+./gradlew build
+#Build a new image based on the dockerfile in the project
+#This step is essential, as otherwise docker-compose up used the image build of the first time it ran
 echo "Building new container images"
-IMAGE="docker-compose build"
-$IMAGE
+docker-compose build
+#Start up a container swarm, running in detached mode (In the background)
 echo "running new container"
-UP="docker-compose up"
-$UP
+docker-compose up -d
