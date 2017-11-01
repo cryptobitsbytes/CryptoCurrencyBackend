@@ -58,7 +58,8 @@ public class TwitterConnector {
             try
             {
                 TwitterObject twitterObject = parser.parseJSONToObject(msg, TwitterObject.class);
-                twitterObservable.newTweet(twitterObject);
+                System.out.println(twitterObject.getText());
+                //twitterObservable.newTweet(twitterObject);
 
             }
             catch (JsonParseException e)
